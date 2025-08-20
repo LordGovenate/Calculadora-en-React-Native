@@ -61,6 +61,7 @@ export default function App() {
           <Text style={styles.text}>Dividir</Text>
         </TouchableOpacity>
       </View>
+       <Text style={styles.title}>Resultado</Text>
       <TextInput
         placeholder="Resultados"
         keyboardType="numeric"
@@ -98,6 +99,7 @@ const styles = StyleSheet.create({
   botones: {
     flexDirection: 'row',
     gap: 10,
+    marginBottom: 30,
   },
   input: {
     height: 50,
@@ -114,7 +116,7 @@ const styles = StyleSheet.create({
     height: 60,
     borderColor: 'gray',
     borderWidth: 1,
-    marginTop: 50,
+    marginTop: 30,
     paddingHorizontal: 10,
     color: 'white',
     width: '80%',
