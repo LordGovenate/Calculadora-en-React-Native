@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View,TextInput ,TouchableOpacity, Button} from 'react-native';
+import { StyleSheet, Text, View,TextInput ,TouchableOpacity} from 'react-native';
 
 export default function App() {
   return (
@@ -36,7 +36,13 @@ export default function App() {
           <Text style={styles.text}>Dividir</Text>
         </TouchableOpacity>
       </View>
-      
+            <TextInput    
+          placeholder="Resultados"
+          keyboardType="numeric"
+          placeholderTextColor="#9aa0a6"
+          style={styles.inputResult}
+          editable={false}
+        />
     </View>
   );
 }
@@ -68,10 +74,21 @@ button:
     gap: 10,
   },
   input: {
-    height: 40,
+    height: 50,
     borderColor: 'gray',
     borderWidth: 1,
-    marginBottom: 10,
+    marginBottom: 40,
+    marginTop: 10,
+    paddingHorizontal: 10,
+    color: 'white',
+    width: '90%',
+    borderRadius: 12,
+  },
+  inputResult: {
+    height: 60,
+    borderColor: 'gray',
+    borderWidth: 1,
+    marginTop: 50,
     paddingHorizontal: 10,
     color: 'white',
     width: '80%',
