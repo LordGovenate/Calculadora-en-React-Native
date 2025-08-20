@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View,TextInput ,TouchableOpacity} from 'react-native';
+import { StyleSheet, Text, View,TextInput ,TouchableOpacity, Button} from 'react-native';
 
 export default function App() {
   return (
@@ -8,8 +8,8 @@ export default function App() {
   
       </View>
       <View>
-        <TouchableOpacity style={{backgroundColor: 'blue', padding: 10, borderRadius: 5}}  >
-          <Text style={{color: 'white', fontSize: 18}}>Botón de ejemplo</Text>
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.title}>Sumar</Text>
         </TouchableOpacity>
       </View>
       
@@ -29,4 +29,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
   },
+button:
+{
+  backgroundColor: 'blue', 
+  padding: 10, 
+  borderRadius: 5},
 });
