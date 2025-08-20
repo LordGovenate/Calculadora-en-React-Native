@@ -11,6 +11,18 @@ export default function App() {
         <TouchableOpacity style={styles.button}>
           <Text style={styles.title}>Sumar</Text>
         </TouchableOpacity>
+
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.title}>Restar</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.title}>Multiplicar</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.title}>Dividir</Text>
+        </TouchableOpacity>
       </View>
       
     </View>
