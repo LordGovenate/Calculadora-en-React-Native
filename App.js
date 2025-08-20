@@ -7,6 +7,18 @@ export default function App() {
       <Text style={styles.title}>Calculadora de Kevin y Josue</Text>
   
       </View>
+      <TextInput    
+          placeholder="Ingrese un número"
+          keyboardType="numeric"
+          placeholderTextColor="#9aa0a6"
+          style={styles.input}
+        />
+      <TextInput    
+          placeholder="Ingrese un número"
+          keyboardType="numeric"
+          placeholderTextColor="#9aa0a6"
+          style={styles.input}
+        />
       <View style={styles.botones}>
         <TouchableOpacity style={styles.button}>
           <Text style={styles.text}>Sumar</Text>
@@ -54,5 +66,15 @@ button:
   botones: {
     flexDirection: 'row',
     gap: 10,
-  }
+  },
+  input: {
+    height: 40,
+    borderColor: 'gray',
+    borderWidth: 1,
+    marginBottom: 10,
+    paddingHorizontal: 10,
+    color: 'white',
+    width: '80%',
+    borderRadius: 12,
+  },
 });
