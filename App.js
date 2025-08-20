@@ -1,11 +1,16 @@
-import { StyleSheet, Text, View,TextInput } from 'react-native';
+import { StyleSheet, Text, View,TextInput ,TouchableOpacity} from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <View>
-<Text style={styles.title}>Calculadora de Kevin y Josue</Text>
+      <Text style={styles.title}>Calculadora de Kevin y Josue</Text>
   
+      </View>
+      <View>
+        <TouchableOpacity style={{backgroundColor: 'blue', padding: 10, borderRadius: 5}}  >
+          <Text style={{color: 'white', fontSize: 18}}>Botón de ejemplo</Text>
+        </TouchableOpacity>
       </View>
       
     </View>
@@ -15,13 +20,13 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'black',
     alignItems: 'center',
     justifyContent: 'center',
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 20,
+    color: 'white',
   },
 });
